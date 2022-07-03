@@ -10,3 +10,9 @@ declare namespace App {
 	// interface Session {}
 	// interface Stuff {}	
 }
+
+declare namespace svelte.JSX {
+	interface HTMLProps<T> { // eslint-disable-line @typescript-eslint/no-unused-vars
+		onoutclick?: () => void
+	}
+}

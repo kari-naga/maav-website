@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto'
+import adapter from '@sveltejs/adapter-static'
 import preprocess from 'svelte-preprocess'
 import Icons from 'unplugin-icons/vite'
 
@@ -9,9 +9,24 @@ const config = {
 	preprocess: preprocess({
   	postcss: true,
   }),
-
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			pages: 'build',
+      assets: 'build',
+      fallback: null,
+      precompress: false,
+		}),
+		alias: {
+			$assets: 'src/assets',
+			$components: 'src/components',
+		},
+		paths: {
+			base: '/maav-website',
+		},
+		prerender: {
+			default: true,
+		},
+		trailingSlash: 'always',
 		vite: {
       plugins: [
         Icons({
@@ -20,7 +35,7 @@ const config = {
         }),
       ],
     },
-	}
+	},
 }
 
 export default config
