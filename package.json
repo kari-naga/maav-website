@@ -2,8 +2,8 @@
 	"name": "maav-website",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"host": "svelte-kit dev --host",
+		"dev": "svelte-kit dev -o",
+		"host": "svelte-kit dev --host -o",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
@@ -13,8 +13,8 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"upload": "gh-pages -d build",
-		"deploy": "svelte-kit build && gh-pages -d build"
+		"upload": "gh-pages -d build --dotfiles",
+		"deploy": "svelte-kit build && gh-pages -d build --dotfiles"
 	},
 	"devDependencies": {
 		"@fontsource/montserrat": "^4.5.11",

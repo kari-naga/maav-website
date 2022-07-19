@@ -14,7 +14,7 @@
   export let height = 0
 </script>
 
-<div in:fly={{ y: 100, duration: 1000 }} bind:clientHeight={height} class="fixed bottom-0 z-10 w-full h-14 p-4 flex items-center gap-6 bg-slate-200 border-t-2 border-slate-300">
+<div class="shrink-0 fixed bottom-0 z-50 w-full h-14 p-4 flex items-center gap-6 bg-slate-200 border-t-2 border-slate-300" bind:clientHeight={height}>
   <IconButton href="https://www.instagram.com/umichmaav/" title="Instagram">
     <IconInstagram class="text-xl" />
   </IconButton>

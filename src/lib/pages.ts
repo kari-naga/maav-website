@@ -1,3 +1,7 @@
+import basePath from './basePath'
+
+export { basePath }
+
 export const internal = [
   {
     title: 'Home',
@@ -34,7 +38,7 @@ export const internal = [
     path: '/join/',
     showInNav: false,
   },
-]
+].map(page => ({ ...page, path: `${basePath}${page.path}` }));
 
 export const external = [
   {
