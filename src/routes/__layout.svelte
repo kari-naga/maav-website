@@ -14,9 +14,9 @@
 <div class="font-montserrat">
   <Header bind:height={headerHeight} />
   {#if ready}
-    <div class="flex flex-col items-center" style:margin-top="{headerHeight}px" style:margin-bottom="{footerHeight}px">
+    <main class="flex flex-col items-center" style:margin-top="{headerHeight}px" style:margin-bottom="{footerHeight}px">
       <slot />
-    </div>
+    </main>
   {/if}
   <Footer bind:height={footerHeight} />
 </div>

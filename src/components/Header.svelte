@@ -8,7 +8,7 @@
   export let height = 0
 </script>
 
-<nav class="shrink-0 fixed top-0 z-50 w-full p-4 flex gap-2 items-center font-semibold bg-slate-700" bind:clientHeight={height}>
+<nav class="shrink-0 fixed top-0 z-10 w-full p-4 flex gap-2 items-center font-semibold bg-slate-700" bind:clientHeight={height}>
   <NavButton href={basePath + '/'} active={basePath + '/' === $current.url.pathname} class="flex-shrink-0" innerClass="!p-2">
     <img src={Logo} alt="MAAV Logo" class="w-28 md:w-40" />
   </NavButton>

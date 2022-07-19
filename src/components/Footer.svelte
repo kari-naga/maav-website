@@ -14,7 +14,7 @@
   export let height = 0
 </script>
 
-<div class="shrink-0 fixed bottom-0 z-50 w-full h-14 p-4 flex items-center gap-6 bg-slate-200 border-t-2 border-slate-300" bind:clientHeight={height}>
+<footer class="shrink-0 fixed bottom-0 z-10 w-full h-14 p-4 flex items-center gap-6 bg-slate-200 border-t-2 border-slate-300" bind:clientHeight={height}>
   <IconButton href="https://www.instagram.com/umichmaav/" title="Instagram">
     <IconInstagram class="text-xl" />
   </IconButton>
@@ -27,7 +27,7 @@
   <IconButton class="ml-auto" handleClick={() => showMenu = true} title="Open Menu">
     <IconList class="text-xl" />
   </IconButton>
-</div>
+</footer>
 
 {#if showMenu}
 <div transition:fade={{ duration: 500 }} class="fixed inset-0 w-full h-full backdrop-blur-sm z-40" />
