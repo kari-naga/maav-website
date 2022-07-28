@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-54c34c50.js",
+    "file": "start-30d360a5.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -21,16 +21,16 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-2e4f162c.js",
+    "file": "pages/__layout.svelte-49d8c415.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-c527767b.js",
-      "_basePath-c75a5d9f.js"
+      "_basePath-7a7ff4de.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-3a52801c.css"
+      "assets/pages/__layout.svelte-88be2e99.css"
     ],
     "assets": [
       "assets/montserrat-cyrillic-variable-wghtOnly-normal-93a1679c.woff2",
@@ -114,49 +114,49 @@
     ]
   },
   "src/routes/subteams/embedded.svelte": {
-    "file": "pages/subteams/embedded.svelte-90d2036b.js",
+    "file": "pages/subteams/embedded.svelte-cf961241.js",
     "src": "src/routes/subteams/embedded.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-c527767b.js",
-      "_basePath-c75a5d9f.js"
+      "_basePath-7a7ff4de.js"
     ]
   },
   "src/routes/subteams/index.svelte": {
-    "file": "pages/subteams/index.svelte-df3e0b77.js",
+    "file": "pages/subteams/index.svelte-21965b2c.js",
     "src": "src/routes/subteams/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-c527767b.js",
-      "_basePath-c75a5d9f.js"
+      "_basePath-7a7ff4de.js"
     ]
   },
   "src/routes/subteams/software.svelte": {
-    "file": "pages/subteams/software.svelte-faa34f61.js",
+    "file": "pages/subteams/software.svelte-5f030f04.js",
     "src": "src/routes/subteams/software.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-c527767b.js",
-      "_basePath-c75a5d9f.js"
+      "_basePath-7a7ff4de.js"
     ]
   },
   "src/routes/subteams/structures.svelte": {
-    "file": "pages/subteams/structures.svelte-916832cc.js",
+    "file": "pages/subteams/structures.svelte-634783e5.js",
     "src": "src/routes/subteams/structures.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-c527767b.js",
-      "_basePath-c75a5d9f.js"
+      "_basePath-7a7ff4de.js"
     ]
   },
   "_index-c527767b.js": {
     "file": "chunks/index-c527767b.js"
   },
-  "_basePath-c75a5d9f.js": {
-    "file": "chunks/basePath-c75a5d9f.js"
+  "_basePath-7a7ff4de.js": {
+    "file": "chunks/basePath-7a7ff4de.js"
   }
 }
