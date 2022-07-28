@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-dd65f3b8.js",
+    "file": "start-3aa18807.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-361f868d.js"
+      "_index-148629f0.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -13,21 +13,20 @@
       "src/routes/blog.svelte",
       "src/routes/contact.svelte",
       "src/routes/index.svelte",
-      "src/routes/join.svelte",
       "src/routes/pictures.svelte",
       "src/routes/subteams.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-9d23fd7e.js",
+    "file": "pages/__layout.svelte-979cd275.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-361f868d.js"
+      "_index-148629f0.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-e7003023.css"
+      "assets/pages/__layout.svelte-ce7cc67e.css"
     ],
     "assets": [
       "assets/montserrat-cyrillic-variable-wghtOnly-normal-93a1679c.woff2",
@@ -44,82 +43,82 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-04fb0932.js",
+    "file": "error.svelte-a240eee6.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-361f868d.js"
+      "_index-148629f0.js"
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-a4b1475c.js",
+    "file": "pages/about.svelte-7ed7b90d.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-361f868d.js"
+      "_index-148629f0.js"
+    ],
+    "css": [
+      "assets/pages/about.svelte-8f32e464.css"
+    ],
+    "assets": [
+      "assets/ford-f8eb2ef7.png",
+      "assets/lockheed-martin-4bcfff6c.png",
+      "assets/northrop-grumman-d9a9fc95.png",
+      "assets/raytheon-6d7dea52.png"
     ]
   },
   "src/routes/blog.svelte": {
-    "file": "pages/blog.svelte-cabba5df.js",
+    "file": "pages/blog.svelte-63c80c41.js",
     "src": "src/routes/blog.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-361f868d.js"
+      "_index-148629f0.js"
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "pages/contact.svelte-e017388c.js",
+    "file": "pages/contact.svelte-9492e056.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-361f868d.js"
+      "_index-148629f0.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-39306a2c.js",
+    "file": "pages/index.svelte-e313fba2.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-361f868d.js"
+      "_index-148629f0.js"
     ],
     "assets": [
       "assets/logo512-cropped-0bc9381a.png",
       "assets/m-air-1270d379.jpg"
     ]
   },
-  "src/routes/join.svelte": {
-    "file": "pages/join.svelte-fcc8ddd8.js",
-    "src": "src/routes/join.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-361f868d.js"
-    ]
-  },
   "src/routes/pictures.svelte": {
-    "file": "pages/pictures.svelte-eb5b80fb.js",
+    "file": "pages/pictures.svelte-664587b0.js",
     "src": "src/routes/pictures.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-361f868d.js"
+      "_index-148629f0.js"
     ]
   },
   "src/routes/subteams.svelte": {
-    "file": "pages/subteams.svelte-fa8edde8.js",
+    "file": "pages/subteams.svelte-d6af25fe.js",
     "src": "src/routes/subteams.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-361f868d.js"
+      "_index-148629f0.js"
     ]
   },
-  "_index-361f868d.js": {
-    "file": "chunks/index-361f868d.js"
+  "_index-148629f0.js": {
+    "file": "chunks/index-148629f0.js"
   }
 }
