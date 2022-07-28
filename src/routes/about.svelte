@@ -12,7 +12,7 @@
   <title>About</title>
 </svelte:head>
 
-<div class="p-12 sm:p-24 flex flex-col gap-12 sm:gap-24">
+<div class="p-8 sm:p-24 flex flex-col gap-12 sm:gap-24">
   <div class="flex flex-col gap-8">
     <h1 class="text-3xl font-semibold">About</h1>
     <p>
@@ -42,7 +42,7 @@
       </a>
     </div>
   </div>
-  <div class="flex flex-col items-center gap-8">
+  <div class="flex flex-col items-center gap-8 -mx-8">
     <h1 class="text-3xl font-semibold">Project Timeline</h1>
     <div class="w-full text-start">
       <Timeline position="alternate">

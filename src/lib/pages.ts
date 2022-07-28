@@ -17,6 +17,20 @@ export const internal = [
     title: 'Subteams',
     path: '/subteams/',
     showInNav: true,
+    subPages: [
+      {
+        title: 'Software',
+        path: '/subteams/software/',
+      },
+      {
+        title: 'Structures',
+        path: '/subteams/structures/',
+      },
+      {
+        title: 'Embedded Systems',
+        path: '/subteams/embedded/',
+      },
+    ],
   },
   {
     title: 'Pictures',

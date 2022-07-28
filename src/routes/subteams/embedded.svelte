@@ -1,9 +1,14 @@
+<script lang="ts">
+  import basePath from '$lib/basePath'
+</script>
+
 <svelte:head>
-  <title>Pictures</title>
+  <title>Embedded Systems</title>
 </svelte:head>
 
 <div class="p-8 sm:p-24 flex flex-col gap-8">
-  <h1 class="text-3xl font-semibold">Pictures</h1>
+  <h1 class="text-3xl font-semibold">Embedded Systems</h1>
+  <a href={`${basePath}/subteams/`} class="font-light text-xl hover:text-blue-600 active:text-blue-800">Back to Subteams</a>
   <p>
     Michigan Autonomous Aerial Vehicles (MAAV) is a student-run group at the University of Michigan that competes in the International Aerial Robotics Competition.
   </p>

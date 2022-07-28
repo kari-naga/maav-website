@@ -13,11 +13,15 @@
     }
   }
   .mask-edges {
-    -webkit-mask-image: linear-gradient(90deg,transparent,#000 2ex,#000 calc(100% - 2ex),transparent);
-    mask-image: linear-gradient(90deg,transparent,#000 2ex,#000 calc(100% - 2ex),transparent);
+    -webkit-mask-image: repeating-linear-gradient(to left, transparent, black 5%, black 95%, transparent);
+    mask-image: repeating-linear-gradient(to left, transparent, black 5%, black 95%, transparent);
+  }
+  .mask-none {
+    -webkit-mask-image: none;
+    mask-image: none;
   }
   .dropcontent {
-    @apply invisible opacity-0
+    @apply transition-opacity invisible opacity-0 absolute z-20;
   }
   .dropdown:hover .dropcontent {
     @apply visible opacity-100;

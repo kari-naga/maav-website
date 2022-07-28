@@ -1,8 +1,9 @@
 <script lang="ts">
-  import { page as current, page } from '$app/stores'
+  import { page as current } from '$app/stores'
   import NavButton from '$components/atomics/NavButton.svelte'
   import Logo from '$assets/resources/header.png'
   import Button from '$components/atomics/Button.svelte'
+  import NavLi from './atomics/NavLi.svelte';
   import IconJoin from '~icons/bi/arrow-right-circle'
   import { internal as pages, basePath } from '$lib/pages'
   export let height = 0
@@ -12,16 +13,24 @@
   <NavButton href={basePath + '/'} active={basePath + '/' === $current.url.pathname} class="flex-shrink-0" innerClass="!p-2">
     <img src={Logo} alt="MAAV Logo" class="w-28 md:w-40" />
   </NavButton>
-  <div class="flex gap-4 -my-3 pt-1 pb-2 px-3 overflow-x-auto overflow-y-hidden mask-edges">
+  <div class="flex gap-4 -my-3 pt-1 pb-2 px-3 overflow-x-auto overflow-y-hidden mask-edges lg:mask-none">
     {#each pages as page}
       {#if page.showInNav}
-        {#if page.title === "#Subteams"}
-          <div class="dropdown">
-            <NavButton href={page.path} active={page.path === $current.url.pathname} class="droproot">
+        {#if page.title === "Subteams"}
+          <div class="lg:dropdown">
+            <NavButton href={page.path} active={(page.path === $current.url.pathname) || (page.subPages && page.subPages.some(subPage => subPage.path === $current.url.pathname))} class="droproot">
               {page.title}
             </NavButton>
-            <div class="dropcontent transition-opacity absolute z-20 bg-white">
-              Pizza
+            <div class="dropcontent">
+              <ul class="pt-2">
+                {#if page.subPages}
+                  {#each page.subPages as { title, path }}
+                    <NavLi href={path} active={path === $current.url.pathname}>
+                      {title}
+                    </NavLi>
+                  {/each}
+                {/if}
+              </ul>
             </div>
           </div>
         {:else}
