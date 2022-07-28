@@ -20,15 +20,15 @@ export const internal = [
     subPages: [
       {
         title: 'Software',
-        path: '/subteams/software/',
+        path: `${basePath}/subteams/software/`,
       },
       {
         title: 'Structures',
-        path: '/subteams/structures/',
+        path: `${basePath}/subteams/structures/`,
       },
       {
         title: 'Embedded Systems',
-        path: '/subteams/embedded/',
+        path: `${basePath}/subteams/embedded/`,
       },
     ],
   },

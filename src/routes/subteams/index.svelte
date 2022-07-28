@@ -8,11 +8,11 @@
 
 <div class="p-8 sm:p-24 flex flex-col gap-8">
   <h1 class="text-3xl font-semibold">Subteams</h1>
-  <div class="flex justify-center gap-4 font-light text-xl">
+  <div class="flex justify-center items-center flex-wrap gap-4 font-light text-xl">
     <a href={`${basePath}/subteams/software/`} class="hover:text-blue-600 active:text-blue-800">Software</a>
-    <div class="border-l-2" />
+    <div class="border-l-2 self-stretch" />
     <a href={`${basePath}/subteams/structures/`} class="hover:text-blue-600 active:text-blue-800">Structures</a>
-    <div class="border-l-2" />
+    <div class="border-l-2 self-stretch" />
     <a href={`${basePath}/subteams/embedded/`} class="hover:text-blue-600 active:text-blue-800">Embedded Systems</a>
   </div>
   <p>

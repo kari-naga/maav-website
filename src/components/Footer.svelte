@@ -36,9 +36,26 @@
     <p>MAAV</p>
     <div class="flex flex-col gap-3 ml-2">
       {#each internal as page}
-        <PrettyLink href={page.path} active={page.path === $current.url.pathname} handleClick={() => showMenu = false}>
-          {page.title}
-        </PrettyLink>
+        {#if page.title === "Subteams"}
+          <div>
+            <PrettyLink href={page.path} active={page.path === $current.url.pathname} handleClick={() => showMenu = false}>
+              {page.title}
+            </PrettyLink>
+            <div class="flex flex-col gap-2 mt-2 ml-2">
+              {#if page.subPages}
+                {#each page.subPages as child}
+                  <PrettyLink href={child.path} active={child.path === $current.url.pathname} handleClick={() => showMenu = false}>
+                    {child.title}
+                  </PrettyLink>
+                {/each}
+              {/if}
+            </div>
+          </div>
+        {:else}
+          <PrettyLink href={page.path} active={page.path === $current.url.pathname} handleClick={() => showMenu = false}>
+            {page.title}
+          </PrettyLink>
+        {/if}
       {/each}
     </div>
   </div>
