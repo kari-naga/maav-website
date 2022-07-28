@@ -35,7 +35,7 @@ export const internal = [
   },
   {
     title: 'Join',
-    path: '/join/',
+    path: 'https://forms.gle/C9xCty7A2RkK2x7YA',
     showInNav: false,
   },
 ].map(page => ({ ...page, path: `${basePath}${page.path}` }));

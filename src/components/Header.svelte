@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { page as current } from '$app/stores'
+  import { page as current, page } from '$app/stores'
   import NavButton from '$components/atomics/NavButton.svelte'
   import Logo from '$assets/resources/header.png'
   import Button from '$components/atomics/Button.svelte'
@@ -15,14 +15,25 @@
   <div class="flex gap-4 -my-3 pt-1 pb-2 px-3 overflow-x-auto overflow-y-hidden mask-edges">
     {#each pages as page}
       {#if page.showInNav}
-        <NavButton href={page.path} active={page.path === $current.url.pathname}>
-          {page.title}
-        </NavButton>
+        {#if page.title === "#Subteams"}
+          <div class="dropdown">
+            <NavButton href={page.path} active={page.path === $current.url.pathname} class="droproot">
+              {page.title}
+            </NavButton>
+            <div class="dropcontent transition-opacity absolute z-20 bg-white">
+              Pizza
+            </div>
+          </div>
+        {:else}
+          <NavButton href={page.path} active={page.path === $current.url.pathname}>
+            {page.title}
+          </NavButton>
+        {/if}
       {/if}
     {/each}
   </div>
-  <a href={`${basePath}/join`} class="ml-auto">
-    <Button class="flex gap-2 items-center transition-all text-white bg-blue-700 active:bg-blue-900 focus:ring focus:ring-blue-400 {`${basePath}join/` === $current.url.pathname ? '!bg-slate-800' : 'hover:bg-blue-800'}">
+  <a href="https://forms.gle/C9xCty7A2RkK2x7YA" class="ml-auto">
+    <Button class="flex gap-2 items-center transition-all text-white bg-blue-700 active:bg-blue-900 focus:ring focus:ring-blue-400 hover:bg-blue-800">
       <span>Join</span>
       <IconJoin class="text-lg hidden md:inline" />
     </Button>

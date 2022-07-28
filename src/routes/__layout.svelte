@@ -11,7 +11,7 @@
   })
 </script>
 
-<div class="font-montserrat">
+<div class="font-montserrat text-lg text-center">
   <Header bind:height={headerHeight} />
   {#if ready}
     <main class="flex flex-col items-center" style:margin-top="{headerHeight}px" style:margin-bottom="{footerHeight}px">

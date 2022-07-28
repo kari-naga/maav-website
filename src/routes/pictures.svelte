@@ -2,7 +2,7 @@
   <title>Pictures</title>
 </svelte:head>
 
-<div class="p-24 flex flex-col gap-8 text-lg font-montserrat text-center">
+<div class="p-24 flex flex-col gap-8">
   <h1 class="text-3xl font-semibold">Pictures</h1>
   <p>
     Michigan Autonomous Aerial Vehicles (MAAV) is a student-run group at the University of Michigan that competes in the International Aerial Robotics Competition.

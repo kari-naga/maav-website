@@ -6,8 +6,23 @@
 @tailwind utilities;
 
 @layer utilities {
+  @keyframes ping {
+    75%, 100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
   .mask-edges {
     -webkit-mask-image: linear-gradient(90deg,transparent,#000 2ex,#000 calc(100% - 2ex),transparent);
     mask-image: linear-gradient(90deg,transparent,#000 2ex,#000 calc(100% - 2ex),transparent);
+  }
+  .dropcontent {
+    @apply invisible opacity-0
+  }
+  .dropdown:hover .dropcontent {
+    @apply visible opacity-100;
+  }
+  .dropdown:hover .droproot > * {
+    @apply bg-slate-800;
   }
 }
