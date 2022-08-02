@@ -1,19 +1,19 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-05268abb.js",
+    "file": "start-ca649a7d.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-c527767b.js"
+      "_index-68b7d76e.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/about.svelte",
       "src/routes/blog.svelte",
-      "src/routes/contact.svelte",
       "src/routes/index.svelte",
       "src/routes/pictures.svelte",
+      "src/routes/sponsors.svelte",
       "src/routes/subteams/embedded.svelte",
       "src/routes/subteams/index.svelte",
       "src/routes/subteams/software.svelte",
@@ -21,16 +21,16 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-39135f33.js",
+    "file": "pages/__layout.svelte-a443dba4.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c527767b.js",
+      "_index-68b7d76e.js",
       "_basePath-7a7ff4de.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-7af05ef0.css"
+      "assets/pages/__layout.svelte-d2ce6da9.css"
     ],
     "assets": [
       "assets/montserrat-cyrillic-variable-wghtOnly-normal-93a1679c.woff2",
@@ -47,24 +47,72 @@
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-67318d99.js",
+    "file": "error.svelte-45858e6b.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c527767b.js"
+      "_index-68b7d76e.js"
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-d4201589.js",
+    "file": "pages/about.svelte-b79c2aad.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c527767b.js"
+      "_index-68b7d76e.js",
+      "_Content-ff97005f.js"
     ],
     "css": [
       "assets/pages/about.svelte-8f32e464.css"
+    ],
+    "assets": [
+      "assets/tzoumas-582d8285.jpg"
+    ]
+  },
+  "src/routes/blog.svelte": {
+    "file": "pages/blog.svelte-0c9db61c.js",
+    "src": "src/routes/blog.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-68b7d76e.js",
+      "_Content-ff97005f.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-2efde49b.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-68b7d76e.js",
+      "_Content-ff97005f.js"
+    ],
+    "assets": [
+      "assets/logo512-cropped-0bc9381a.png",
+      "assets/m-air-1270d379.jpg"
+    ]
+  },
+  "src/routes/pictures.svelte": {
+    "file": "pages/pictures.svelte-a9ee4e91.js",
+    "src": "src/routes/pictures.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-68b7d76e.js",
+      "_Content-ff97005f.js"
+    ]
+  },
+  "src/routes/sponsors.svelte": {
+    "file": "pages/sponsors.svelte-25a9a406.js",
+    "src": "src/routes/sponsors.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-68b7d76e.js",
+      "_Content-ff97005f.js"
     ],
     "assets": [
       "assets/ford-f8eb2ef7.png",
@@ -73,90 +121,60 @@
       "assets/raytheon-6d7dea52.png"
     ]
   },
-  "src/routes/blog.svelte": {
-    "file": "pages/blog.svelte-b3b09ba5.js",
-    "src": "src/routes/blog.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-c527767b.js"
-    ]
-  },
-  "src/routes/contact.svelte": {
-    "file": "pages/contact.svelte-48256563.js",
-    "src": "src/routes/contact.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-c527767b.js"
-    ]
-  },
-  "src/routes/index.svelte": {
-    "file": "pages/index.svelte-5d8a298f.js",
-    "src": "src/routes/index.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-c527767b.js"
-    ],
-    "assets": [
-      "assets/logo512-cropped-0bc9381a.png",
-      "assets/m-air-1270d379.jpg"
-    ]
-  },
-  "src/routes/pictures.svelte": {
-    "file": "pages/pictures.svelte-6756ee8c.js",
-    "src": "src/routes/pictures.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-c527767b.js"
-    ]
-  },
   "src/routes/subteams/embedded.svelte": {
-    "file": "pages/subteams/embedded.svelte-cf961241.js",
+    "file": "pages/subteams/embedded.svelte-cc09cdec.js",
     "src": "src/routes/subteams/embedded.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c527767b.js",
+      "_index-68b7d76e.js",
+      "_Content-ff97005f.js",
       "_basePath-7a7ff4de.js"
     ]
   },
   "src/routes/subteams/index.svelte": {
-    "file": "pages/subteams/index.svelte-ea59ab85.js",
+    "file": "pages/subteams/index.svelte-f0b245f8.js",
     "src": "src/routes/subteams/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c527767b.js",
+      "_index-68b7d76e.js",
+      "_Content-ff97005f.js",
       "_basePath-7a7ff4de.js"
     ]
   },
   "src/routes/subteams/software.svelte": {
-    "file": "pages/subteams/software.svelte-5f030f04.js",
+    "file": "pages/subteams/software.svelte-ce60170f.js",
     "src": "src/routes/subteams/software.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c527767b.js",
+      "_index-68b7d76e.js",
+      "_Content-ff97005f.js",
       "_basePath-7a7ff4de.js"
     ]
   },
   "src/routes/subteams/structures.svelte": {
-    "file": "pages/subteams/structures.svelte-634783e5.js",
+    "file": "pages/subteams/structures.svelte-cdd865e6.js",
     "src": "src/routes/subteams/structures.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c527767b.js",
+      "_index-68b7d76e.js",
+      "_Content-ff97005f.js",
       "_basePath-7a7ff4de.js"
     ]
   },
-  "_index-c527767b.js": {
-    "file": "chunks/index-c527767b.js"
+  "_index-68b7d76e.js": {
+    "file": "chunks/index-68b7d76e.js"
   },
   "_basePath-7a7ff4de.js": {
     "file": "chunks/basePath-7a7ff4de.js"
+  },
+  "_Content-ff97005f.js": {
+    "file": "chunks/Content-ff97005f.js",
+    "imports": [
+      "_index-68b7d76e.js"
+    ]
   }
 }
