@@ -1,4 +1,5 @@
-<div class="max-w-sm sm:max-w-none mb-12 sm:mb-24 overflow-hidden">
+<!-- Not Working -->
+<div class="max-w-[21rem] sm:max-w-none overflow-hidden">
 	<blockquote
 		class="instagram-media"
 		data-instgrm-permalink="https://www.instagram.com/umichmaav/?utm_source=ig_embed&amp;utm_campaign=loading"

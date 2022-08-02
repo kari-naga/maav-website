@@ -7,7 +7,7 @@
 </script>
 
 <a {href} {title} class={className}>
-  <button type="button" {title} class="transition-all hover:text-blue-500 active:text-blue-700" on:click={handleClick}>
+  <button type="button" {title} class="transition-all hover:text-blue-500 active:text-blue-700" on:click|preventDefault={handleClick}>
     <slot />
   </button>
 </a>

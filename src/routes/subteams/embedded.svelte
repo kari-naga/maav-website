@@ -1,18 +1,21 @@
 <script lang="ts">
+  import Content from '$components/Content.svelte'
   import basePath from '$lib/basePath'
+  const title = 'Embedded Systems'
 </script>
 
 <svelte:head>
-  <title>Embedded Systems</title>
+  <title>{title}</title>
 </svelte:head>
 
-<div class="p-8 sm:p-24 flex flex-col gap-8">
-  <h1 class="text-3xl font-semibold">Embedded Systems</h1>
+<Content {title}>
   <a href={`${basePath}/subteams/`} class="font-light text-xl hover:text-blue-600 active:text-blue-800">Back to Subteams</a>
+  <h3 class="text-xl font-medium">Circuitry</h3>
   <p>
-    Michigan Autonomous Aerial Vehicles (MAAV) is a student-run group at the University of Michigan that competes in the International Aerial Robotics Competition.
+    The Embedded Systems subteam designs and builds the vehicles' electrical hardware and electronics for testing motors and materials. The vehicles' printed circuit boards (PCB) have to provide platforms for the control software to run and communicate with the navigation software, as well as manage the safety of the batteries, motors, and operators. We design with Eagle and use Subversion for collaboration.
   </p>
+  <h3 class="text-xl font-medium">Driver Software</h3>
   <p>
-    MAAV strives to provide practical, hands-on experience for students by competing annually in the International Aerial Robotics Competition (IARC). Members of MAAV engage in the design, building, and testing of an autonomous unmanned aerial system (UAS) while furthering multiple areas of Computer Science and Aerospace Engineering research. Learn more about the current and past missions of the International Aerial Robotics Competition by clicking <a href="http://www.aerialroboticscompetition.org/" class="underline hover:text-blue-600 active:text-blue-800">here</a>.
+    Embedded Systems also develops driver sofware for interfacing with the low level sensors on the vehicle for our Texas Instruments TIVA Microprocessor. This subteam works closely with circuits to ensure reliable sensor communication and data throughput.
   </p>
-</div>
+</Content>

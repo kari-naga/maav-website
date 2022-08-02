@@ -33,6 +33,11 @@ export const internal = [
     ],
   },
   {
+    title: 'Sponsors',
+    path: '/sponsors/',
+    showInNav: true,
+  },
+  {
     title: 'Pictures',
     path: '/pictures/',
     showInNav: true,
@@ -40,11 +45,6 @@ export const internal = [
   {
     title: 'Blog',
     path: '/blog/',
-    showInNav: true,
-  },
-  {
-    title: 'Contact',
-    path: '/contact/',
     showInNav: true,
   },
   {

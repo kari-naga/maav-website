@@ -1,2 +1,2 @@
-Professor Vasileios Tzoumas link - https://vasileiostzoumas.com/
+Add pictures
 Member roster - let people add their own info, resume book?

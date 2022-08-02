@@ -10,6 +10,7 @@
   import { page as current } from '$app/stores'
   import { internal, external } from '$lib/pages'
   import PrettyLink from '$components/atomics/PrettyLink.svelte'
+  import ExpandingLink from './atomics/ExpandingLink.svelte';
   let showMenu = false
   export let height = 0
 </script>
@@ -31,26 +32,15 @@
 
 {#if showMenu}
 <div transition:fade={{ duration: 500 }} class="fixed inset-0 w-full h-full backdrop-blur-sm z-40" />
-<div transition:fly={{ x: 100, duration: 500 }} use:clickOutside on:outclick={() => showMenu = false} class="fixed top-0 right-0 h-full w-64 z-50 bg-slate-100 shadow-xl p-8 flex flex-col gap-6">
+<div transition:fly={{ x: 100, duration: 500 }} use:clickOutside on:outclick={() => showMenu = false} class="fixed top-0 right-0 h-full w-64 z-50 bg-slate-100 shadow-xl p-6 flex flex-col gap-4">
   <div class="flex flex-col gap-2">
     <p>MAAV</p>
-    <div class="flex flex-col gap-3 ml-2">
+    <div class="flex flex-col gap-2 ml-2">
       {#each internal as page}
         {#if page.title === "Subteams"}
-          <div>
-            <PrettyLink href={page.path} active={page.path === $current.url.pathname} handleClick={() => showMenu = false}>
-              {page.title}
-            </PrettyLink>
-            <div class="flex flex-col gap-2 mt-2 ml-2">
-              {#if page.subPages}
-                {#each page.subPages as child}
-                  <PrettyLink href={child.path} active={child.path === $current.url.pathname} handleClick={() => showMenu = false}>
-                    {child.title}
-                  </PrettyLink>
-                {/each}
-              {/if}
-            </div>
-          </div>
+          <ExpandingLink href={page.path} active={page.path === $current.url.pathname} handleClick={() => showMenu = false} subPages={page.subPages}>
+            {page.title}
+          </ExpandingLink>
         {:else}
           <PrettyLink href={page.path} active={page.path === $current.url.pathname} handleClick={() => showMenu = false}>
             {page.title}
@@ -61,7 +51,7 @@
   </div>
   <div class="flex flex-col gap-2">
     <p>External</p>
-    <div class="flex flex-col gap-3 ml-2">
+    <div class="flex flex-col gap-2 ml-2">
       {#each external as page}
         <PrettyLink href={page.path} active={page.path === $current.url.pathname}>
           {page.title}
@@ -75,7 +65,7 @@
       maav-leads@umich.edu
     </a>
   </div>
-  <IconButton class="absolute bottom-0 right-0 m-4" handleClick={() => showMenu = false} title="Close Menu">
+  <IconButton class="absolute bottom-0 right-0 p-4 bg-slate-100" handleClick={() => showMenu = false} title="Close Menu">
     <IconClose class="text-xl" />
   </IconButton>
 </div>

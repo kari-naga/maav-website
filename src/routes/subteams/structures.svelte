@@ -1,18 +1,21 @@
 <script lang="ts">
+  import Content from '$components/Content.svelte'
   import basePath from '$lib/basePath'
+  const title = 'Structures'
 </script>
 
 <svelte:head>
-  <title>Structures</title>
+  <title>{title}</title>
 </svelte:head>
 
-<div class="p-8 sm:p-24 flex flex-col gap-8">
-  <h1 class="text-3xl font-semibold">Structures</h1>
+<Content {title}>
   <a href={`${basePath}/subteams/`} class="font-light text-xl hover:text-blue-600 active:text-blue-800">Back to Subteams</a>
+  <h3 class="text-xl font-medium">The Drone</h3>
   <p>
-    Michigan Autonomous Aerial Vehicles (MAAV) is a student-run group at the University of Michigan that competes in the International Aerial Robotics Competition.
+    The Structures team is responsible for the design, build, and testing of the drone. To design, we use Solidworks to model and analyze the quadcopter’s custom and off the shelf components. To build, we use carbon fiber layups, machining, and additive manufacturing processes. To test, we fly (and crash) the vehicle indoors as well as at the MAir outdoor test facility.
   </p>
+  <h3 class="text-xl font-medium">The Mast</h3>
   <p>
-    MAAV strives to provide practical, hands-on experience for students by competing annually in the International Aerial Robotics Competition (IARC). Members of MAAV engage in the design, building, and testing of an autonomous unmanned aerial system (UAS) while furthering multiple areas of Computer Science and Aerospace Engineering research. Learn more about the current and past missions of the International Aerial Robotics Competition by clicking <a href="http://www.aerialroboticscompetition.org/" class="underline hover:text-blue-600 active:text-blue-800">here</a>.
+    For Mission 9, the Structures subteam is also tasked with building the Mast per the spec given by IARC, with which we will test our drone and ultimately compete in the competition using.
   </p>
-</div>
+</Content>
