@@ -1,6 +1,7 @@
 <script lang="ts">
   import Content from '$components/Content.svelte'
   import basePath from '$lib/basePath'
+  import Hero from '$assets/images/hero.jpg'
   const title = 'Structures'
 </script>
 
@@ -10,6 +11,7 @@
 
 <Content {title}>
   <a href={`${basePath}/subteams/`} class="font-light text-xl hover:text-blue-600 active:text-blue-800">Back to Subteams</a>
+  <img src={Hero} alt="Hero Drone" class="w-11/12">
   <h3 class="text-xl font-medium">The Drone</h3>
   <p>
     The Structures team is responsible for the design, build, and testing of the drone. To design, we use Solidworks to model and analyze the quadcopter’s custom and off the shelf components. To build, we use carbon fiber layups, machining, and additive manufacturing processes. To test, we fly (and crash) the vehicle indoors as well as at the MAir outdoor test facility.

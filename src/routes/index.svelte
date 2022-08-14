@@ -1,18 +1,22 @@
 <script lang="ts">
   import Content from '$components/Content.svelte'
   import Logo from '$assets/resources/logo512-cropped.png'
-  import Backdrop from '$assets/pictures/m-air.jpg'
-  import InstagramEmbed from '$components/InstagramPostEmbed.svelte'
+  import Backdrop from '$assets/images/m-air.jpg'
+  import InstagramEmbed from '$components/InstagramEmbed.svelte'
   const title = 'Michigan Autonomous Aerial Vehicles'
+</script>
+
+<script context="module">
+  export const router = false;
 </script>
 
 <svelte:head>
   <title>{title}</title>
 </svelte:head>
 
-<div class="w-screen h-80 -mx-24 -mt-24 overflow-hidden flex justify-center items-center">
+<div class="w-screen h-80 -mx-8 -mt-8 sm:-mx-12 sm:-mt-12 overflow-hidden flex justify-center items-center">
   <img src={Logo} alt="Big Logo" class="absolute w-72" />
-  <img src={Backdrop} alt="M-Air" class="-z-10 opacity-60 w-full h-full object-cover" />
+  <img src={Backdrop} alt="M-Air" class="-z-10 opacity-60 w-full object-cover" />
 </div>
 <Content {title}>
   <p>

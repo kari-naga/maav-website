@@ -19,9 +19,9 @@
     <PrettyLink {href} {title} {active} class={className} {handleClick}>
       <slot />
     </PrettyLink>
-    <button type="button" title="Toggle Subteams Visibility" class="relative w-6 h-6 flex justify-center items-center transition-all hover:text-blue-500 active:text-blue-700" on:click={() => showContents = !showContents}>
-      <IconPlus class={`text-xl absolute inset-0 transition-all duration-300 ${showContents ? 'invisible opacity-0 rotate-90' : ''}`} />
-      <IconMinus class={`text-xl absolute inset-0 transition-all duration-300 ${showContents ? '' : 'invisible opacity-0 -rotate-90'}`} />
+    <button type="button" title="Toggle Subteams Visibility" class="relative w-6 h-6 flex justify-center items-center hover:text-blue-500 active:text-blue-700" on:click={() => showContents = !showContents}>
+      <IconPlus class={`text-xl absolute inset-0 transition-all ${showContents ? 'invisible opacity-0 rotate-90' : ''}`} />
+      <IconMinus class={`text-xl absolute inset-0 transition-all ${showContents ? '' : 'invisible opacity-0 -rotate-90'}`} />
     </button>
   </div>
   <div class={`transition-all duration-300 ${showContents ? '' : 'opacity-0'}`} style:height={showContents ? height + 'px' : 0}>

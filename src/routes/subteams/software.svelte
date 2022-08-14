@@ -1,6 +1,7 @@
 <script lang="ts">
   import Content from '$components/Content.svelte'
   import basePath from '$lib/basePath'
+  import TestDrone from '$assets/images/test-drone.jpg'
   const title = 'Software'
 </script>
 
@@ -10,6 +11,7 @@
 
 <Content {title}>
   <a href={`${basePath}/subteams/`} class="font-light text-xl hover:text-blue-600 active:text-blue-800">Back to Subteams</a>
+  <img src={TestDrone} alt="Test Drone" class="w-11/12">
   <h3 class="text-xl font-medium">Perception</h3>
   <p>
     The Software subteam uses Intel Realsense RGBD cameras and LIDAR to view our surrounding world. To solve our challenges in the new mission, we research and develop state-of-the-art algorithms to perform detection, segmentation, fitting, tracking, and other functions on the image and point cloud. Some problems we are working on include visual odometry, image stitching, object detection, and tracking using advanced neural networks. We also use LIDAR to estimate the position of obstacles. Our algorithms are run on a Jetson TX2 embedded GPU.

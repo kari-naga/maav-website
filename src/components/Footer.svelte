@@ -38,7 +38,7 @@
     <div class="flex flex-col gap-2 ml-2">
       {#each internal as page}
         {#if page.title === "Subteams"}
-          <ExpandingLink href={page.path} active={page.path === $current.url.pathname} handleClick={() => showMenu = false} subPages={page.subPages}>
+          <ExpandingLink href={page.path} active={page.path === $current.url.pathname || (page.subPages && page.subPages.some(subPage => subPage.path === $current.url.pathname))} handleClick={() => showMenu = false} subPages={page.subPages}>
             {page.title}
           </ExpandingLink>
         {:else}
