@@ -17,16 +17,16 @@
   </p>
   <div class="!max-w-none flex justify-center items-center gap-8 flex-wrap">
     <a href="https://www.ford.com/">
-      <img src={Ford} alt="Ford" class="h-14">
+      <img src={Ford} alt="Ford" class="w-auto h-14" width="2050" height="800">
     </a>
     <a href="https://www.lockheedmartin.com/">
-      <img src={Lockheed} alt="Lockheed Martin" class="h-14">
+      <img src={Lockheed} alt="Lockheed Martin" class="w-auto h-14" width="160" height="113">
     </a>
     <a href="https://www.northropgrumman.com/">
-      <img src={Northrop} alt="Northrop Grumman" class="h-14">
+      <img src={Northrop} alt="Northrop Grumman" class="w-auto h-14" width="1430" height="251">
     </a>
     <a href="https://www.rtx.com/">
-      <img src={Raytheon} alt="Raytheon" class="h-14">
+      <img src={Raytheon} alt="Raytheon" class="w-auto h-14" width="1600" height="410">
     </a>
   </div>
 </Content>

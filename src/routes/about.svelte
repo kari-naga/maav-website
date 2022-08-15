@@ -24,7 +24,7 @@
     Our staff advisor is Assistant Professor Vasileios Tzoumas, a member of the Department of Aerospace Engineering and of the Robotics Institute of the University of Michigan. Our work would not be possible without his assistance and expertise.
     You can find his website <a href="https://vasileiostzoumas.com/" class="underline hover:text-blue-600 active:text-blue-800">here</a>.
   </p>
-  <img src={Tzoumas} alt="Assistant Professor Vasileios Tzoumas" class="h-40">
+  <img src={Tzoumas} alt="Assistant Professor Vasileios Tzoumas" class="w-auto h-40" width="344" height="351">
 </Content>
 <Content title="Project Timeline">
   <div class="w-screen text-start -mx-8">

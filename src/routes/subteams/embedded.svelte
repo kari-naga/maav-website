@@ -11,7 +11,7 @@
 
 <Content {title}>
   <a href={`${basePath}/subteams/`} class="font-light text-xl hover:text-blue-600 active:text-blue-800">Back to Subteams</a>
-  <img src={Circuits} alt="Circuit Board" class="w-11/12">
+  <img src={Circuits} alt="Circuit Board" class="w-11/12 h-auto" width="1370" height="675">
   <h3 class="text-xl font-medium">Circuitry</h3>
   <p>
     The Embedded Systems subteam designs and builds the vehicles' electrical hardware and electronics for testing motors and materials. The vehicles' printed circuit boards (PCB) have to provide platforms for the control software to run and communicate with the navigation software, as well as manage the safety of the batteries, motors, and operators. We design with Eagle and use Subversion for collaboration.

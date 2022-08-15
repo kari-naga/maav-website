@@ -15,8 +15,8 @@
 </svelte:head>
 
 <div class="w-screen h-80 -mx-8 -mt-8 sm:-mx-12 sm:-mt-12 overflow-hidden flex justify-center items-center">
-  <img src={Logo} alt="Big Logo" class="absolute w-72" />
-  <img src={Backdrop} alt="M-Air" class="-z-10 opacity-60 w-full object-cover" />
+  <img src={Logo} alt="Big Logo" class="absolute w-72 h-auto" width="431" height="234" />
+  <img src={Backdrop} alt="M-Air" class="-z-10 opacity-60 w-full h-full object-cover" width="4032" height="3024" />
 </div>
 <Content {title}>
   <p>
